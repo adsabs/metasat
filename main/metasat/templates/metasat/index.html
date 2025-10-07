@@ -223,7 +223,6 @@
                     <p><strong>Concept Segments:</strong>  {% for f in element.segment.all %}<a href="/metasat/{{element.identifier}}?segment={{f|cut:' '}}">{{ f }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</p>
                     <p><strong>Concept Families:</strong>  {% for f in element.family.all %}<a href="/metasat/{{element.identifier}}?family={{f|cut:' '}}">{{ f }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</p>
 
-                    <p><a href="mailto:metasat@schema.space?subject=suggestion: {{element.identifier}}">suggest an edit</a></p>
 
                     {% if crosswalks %}
                         <br/><br/>
